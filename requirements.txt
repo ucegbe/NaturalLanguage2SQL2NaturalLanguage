@@ -1,0 +1,11 @@
+streamlit
+boto3
+sentencepiece
+pandas
+anthropic
+uuid
+streamlit_chat
+transformers
+tiktoken
+langchain
+s3fs

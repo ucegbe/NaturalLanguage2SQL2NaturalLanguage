@@ -1,0 +1,1 @@
+{"anthropic.claude-instant-v1": {"input": 8e-07, "output": 2.4e-06}, "anthropic.claude-v2": {"input": 8e-06, "output": 2.4e-05}, "ai21.j2-mid": {"input": 1.25e-05, "output": 1.25e-05}, "ai21.j2-ultra": {"input": 1.88e-05, "output": 1.88e-05}, "amazon.titan-tg1-large": {"input": 8e-07, "output": 1.6e-06}}
