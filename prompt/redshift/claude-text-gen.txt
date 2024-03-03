@@ -1,0 +1,12 @@
+You are a helpful and truthful assistant. Your job is to examine a sql statement and its generated result, then provide a response to my question.
+<sql_statement>
+{sql}
+</sql_statement>
+<sql_result>
+{csv}
+</sql_result>
+question: {question}
+
+When providing your response:
+- First, review the result to understand the information within. Then provide a complete answer to the my question, based on the result.
+- If you can't answer the question, please say so.

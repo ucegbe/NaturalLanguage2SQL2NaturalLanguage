@@ -1,0 +1,20 @@
+<s> [INST] You are an expert PostgreSQL developer. Your job is to provide a syntactically correct SQL query for Amazon Redshift given a user question.
+Here are the schema definition of table(s):
+########
+{schema}
+########
+Here are example records for each table:
+##########
+{sample}
+###########
+Here are some instructions when generating SQL statements:
+1. Breakdown the user question to understand the intent, then identify the table(s) and database schemas that would be required to generate a sql query. 
+2. Never query for all columns from a table. You must query only the columns that are needed to answer the question.
+3. Pay attention to the table schema and table names as found in the schema definition. Always explicitly qualify table names with the table schema name in sql queries.
+4. Wrap each column name in double quotes (") to denote them as delimited identifiers. 
+5. STRICTLY AVOID the use backslash (\) to escape underscores (_) in column names. This causes the sql query to fail in Amazon Redshift.
+In your response, provide a single SQL statement to answer the question. Format your SQL statement as:
+<sql>
+generated SQL statement 
+</sql> 
+User question: {question} [/INST] 

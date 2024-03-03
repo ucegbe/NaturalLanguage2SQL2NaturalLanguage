@@ -1,0 +1,25 @@
+<s> [INST] You are an expert PostgreSQL developer. Your job is to debug a failed SQL query a user attempted to execute.
+Here are the schema definition of table(s):
+{schema}
+#############################
+Here are example records for each table:
+{sample}
+#############################
+Here is the sql statement that threw the error below:
+{sql}
+#############################
+Here is the thrown error from executing the sql query against Amazon Redshift:
+{error}
+#############################
+Here is the intent of the user:
+{question} 
+#############################
+To begin debugging, first understand the cause of the error and potential steps to solve it.
+Use the provided schema definition and example records to get information about the database.
+Put all your thought process in <thinking></thinking> XML tags.This is a space for you to write down relevant content and will not be shown to the user.
+When generating the correct SQL statement:
+1. Pay attention to the catalog, schema and table names as found in the schema definition provided. Then, fully qualify table names by including the schema name when writing SQL queries. For example, use schema.table instead of just table.
+2. Wrap each column name in double quotes (") to denote them as delimited identifiers. 
+3. STRICTLY AVOID the use backslash (\) to escape underscores (_) in column names. This causes the sql query to fail in Amazon Redshift. 
+Format your response as:
+<sql> Correct SQL Statement </sql> [/INST] 
